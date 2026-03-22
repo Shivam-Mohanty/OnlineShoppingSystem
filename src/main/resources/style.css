@@ -1,0 +1,83 @@
+/* Main window background - Deep Dark Gray */
+.root {
+    -fx-background-color: #121212;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+}
+
+/* Standard text labels */
+.label {
+    -fx-text-fill: #E0E0E0;
+    -fx-font-weight: bold;
+}
+
+/* Modernize the TextFields (Search bar and Admin inputs) */
+.text-field {
+    -fx-background-color: #1E1E1E;
+    -fx-text-fill: #FFFFFF;
+    -fx-border-color: #333333;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 10px;
+}
+
+/* Subtle glow effect when typing */
+.text-field:focused {
+    -fx-border-color: #BB86FC; /* Developer-style purple accent */
+    -fx-effect: dropshadow(three-pass-box, rgba(187,134,252,0.3), 5, 0, 0, 0);
+}
+
+/* Style the standard Buttons */
+.button {
+    -fx-background-color: #BB86FC;
+    -fx-text-fill: #121212;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+}
+
+/* Button Hover and Press Effects */
+.button:hover {
+    -fx-background-color: #D0A9FE;
+}
+
+.button:pressed {
+    -fx-background-color: #9D4EDD;
+}
+
+/* ========================================= */
+/* MODERN PRODUCT LIST STYLING               */
+/* ========================================= */
+
+/* The outer box of the ListView */
+.list-view {
+    -fx-background-color: #1E1E1E;
+    -fx-background-radius: 8px;
+    -fx-border-color: #333333;
+    -fx-border-radius: 8px;
+    -fx-padding: 5px;
+}
+
+/* Individual items inside the list */
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #E0E0E0;
+    -fx-padding: 12px 10px; /* Added padding for a modern, spacious feel */
+    -fx-border-width: 0 0 1 0; /* Subtle bottom border acting as a divider */
+    -fx-border-color: #2C2C2C;
+}
+
+/* Hovering over an item */
+.list-cell:hover {
+    -fx-background-color: #2C2C2C;
+    -fx-cursor: hand;
+}
+
+/* Clicking/Selecting an item */
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: #3700B3; /* Deep purple highlight */
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 4px;
+}
